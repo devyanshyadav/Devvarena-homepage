@@ -4,35 +4,49 @@ import { Button } from "@nextui-org/react";
 import Image from "next/image";
 import heroImg from "./public/HeroSec.svg";
 import img3 from "./public/img3.svg";
+import 'animate.css';
 
 const page = () => {
   const cssTools=[{
     name:'CSS Button Generator',
     desr:'Create custom CSS code for stylish and interactive buttons.',
+    link:'https://buttons.devvarena.com/',
   },
   {
     name:'Palette Paradise ',
     desr:'Manage color palettes for web designs with ease.',
-  },
-  {
-    name:'Code Minifier',
-    desr:'Compress CSS, JavaScript, and HTML code for improved performance.',
-  },
-  {
-    name:'Code Prettier',
-    desr:'Format and beautify messy CSS, JavaScript, and HTML code.',
+    link:'https://palette-paradise.devvarena.com/',
+
   },
   {
     name:'CSS Box Shadows Generator',
     desr:'Generate CSS code for custom box shadows.',
+    link:'https://box-shadows.devvarena.com/',
+
+  },
+  {
+    name:'Code Minifier',
+    desr:'Compress CSS, JavaScript, and HTML code for improved performance.',
+    link:'https://code-minifier.devvarena.com/',
+
+  },
+  {
+    name:'Code Formatier',
+    desr:'Format and beautify messy CSS, JavaScript, and HTML code.',
+    link:'https://code-formatier.devvarena.com/',
+
   },
   {
     name:'CSS Glassmorphism Generator',
     desr:'Create CSS code for the glassmorphism effect in UI design.',
+    link:'https://glassmorphism.devvarena.com/',
+
   },
   {
     name:'GDrive to Img Converter',
     desr:'Convert images from Google Drive to various formats for web integration.',
+    link:'https://gdrive-img.devvarena.com/',
+
   },
 
 ]
@@ -65,7 +79,7 @@ const devLink=`https://editor.devvarena.com/`
                 />
               </svg></Button>
         </header>
-        <div className=" md:w-5/6 flex items-center flex-col justify-center h-full space-y-2  transform translate-y-8 text-center">
+        <div className=" animate__animated animate__fadeIn md:w-5/6 flex items-center flex-col justify-center h-full space-y-2  transform translate-y-8 text-center">
           <h1 className="text-4xl font-normal">
             The Perfect Editor for Beginners
           </h1>
@@ -149,7 +163,7 @@ const devLink=`https://editor.devvarena.com/`
               </h5>
             </a>
             <Button
-      href="https://github.com/nextui-org/nextui"
+      href={elem.link}
       size="sm"
       as={Link}
       color="primary"
