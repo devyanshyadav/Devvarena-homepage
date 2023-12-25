@@ -99,7 +99,7 @@ const devLink=`https://editor.devvarena.com/`
                 />
               </svg></Link>
       </div>
-      <section className="w-full h-[500px]  grid grid-cols-1 md:grid-cols-2">
+      <section className="w-full md:h-[500px]  grid grid-cols-1 md:grid-cols-2">
         <div className="flex p-4 justify-center flex-col h-[300px]">
           <h1 className="text-3xl md:text-5xl">
             VS Code <br /> Environment and <br /> Shortcuts for
@@ -139,21 +139,21 @@ const devLink=`https://editor.devvarena.com/`
             with Essential CSS Tools
           </p>
         </span>
-        <div className="grid grid-cols-1 md:flex flex-wrap items-center justify-center gap-2 p-9 w-full text-white">
+        <div className="grid grid-cols-1 md:flex flex-wrap items-center justify-center gap-2 p-5 md:p-9 w-full text-white">
          {
           cssTools.map((elem, i)=>(
-            <div class="p-6 bg-tertiary border border-gray-600 rounded-lg shadow hover:border-primary " key={i}>
+            <div class="p-6 bg-tertiary border md:block grid grid-cols-2 gap-2  border-gray-600 rounded-lg shadow hover:border-primary " key={i}>
             <a href="#">
-              <h5 class="mb-2 text-lg md:text-2xl font-bold ">
+              <h5 class="mb-2 text-start text-sm md:text-2xl font-bold ">
                 {elem.name}
               </h5>
             </a>
             <Button
       href="https://github.com/nextui-org/nextui"
+      size="sm"
       as={Link}
       color="primary"
       showAnchorIcon
-      variant="flat"
       className="border border-primary"
     >
       View Now
