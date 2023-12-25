@@ -1,113 +1,190 @@
-import Image from 'next/image'
+import Link from "next/link";
+import React from "react";
+import { Button } from "@nextui-org/react";
+import Image from "next/image";
+import heroImg from "./public/HeroSec.svg";
+import img3 from "./public/img3.svg";
 
-export default function Home() {
+const page = () => {
+  const cssTools=[{
+    name:'CSS Button Generator',
+    desr:'Create custom CSS code for stylish and interactive buttons.',
+  },
+  {
+    name:'Palette Paradise ',
+    desr:'Manage color palettes for web designs with ease.',
+  },
+  {
+    name:'Code Minifier',
+    desr:'Compress CSS, JavaScript, and HTML code for improved performance.',
+  },
+  {
+    name:'Code Prettier',
+    desr:'Format and beautify messy CSS, JavaScript, and HTML code.',
+  },
+  {
+    name:'CSS Box Shadows Generator',
+    desr:'Generate CSS code for custom box shadows.',
+  },
+  {
+    name:'CSS Glassmorphism Generator',
+    desr:'Create CSS code for the glassmorphism effect in UI design.',
+  },
+  {
+    name:'GDrive to Img Converter',
+    desr:'Convert images from Google Drive to various formats for web integration.',
+  },
+
+]
+
+const devLink=`https://editor.devvarena.com/`
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <>
+      <section className="heroSection w-full h-[400px]  md:h-[500px] rounded-lg  md:rounded-3xl px-2 relative flex items-center  flex-col">
+        <header className="flex w-full items-center justify-between py-2">
+          <Link
+            href={devLink}
+            className="LOGO select-none text-3xl  font-semibold"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            Devvarena{" "}
+          </Link>
+          <Button color="primary" as={Link} href={devLink}>Try Now  <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg></Button>
+        </header>
+        <div className=" md:w-5/6 flex items-center flex-col justify-center h-full space-y-2  transform translate-y-8 text-center">
+          <h1 className="text-4xl font-normal">
+            The Perfect Editor for Beginners
+          </h1>
+          <p className="font-light">Simple, Powerful, and Feature-Packed</p>
+          <span>
+            <Button color="primary" as={Link} href={devLink}>Try Editor Now</Button>
+          </span>
+          <Image
+            src={heroImg}
+            alt="heroImg"
+            width={500}
+            height={500}
+            className="heroSecImg w-full transform translate-y-8 md:p-2 p-1 rounded-lg md:rounded-3xl select-none"
+          />
         </div>
+      </section>
+      <div className="w-full h-[100px] md:h-[200px] flex items-end justify-center">
+        <Link  href={devLink} className="border rounded-3xl px-5 text-sm border-primary flex items-center justify-center p-1">Kickstart your first project now<svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg></Link>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+      <section className="w-full h-[500px]  grid grid-cols-1 md:grid-cols-2">
+        <div className="flex p-4 justify-center flex-col h-[300px]">
+          <h1 className="text-3xl md:text-5xl">
+            VS Code <br /> Environment and <br /> Shortcuts for
+          </h1>
+          <p className="text-primary text-xl">Efficient Development</p>
+          <Button color="primary" className="w-fit mt-2" as={Link} href={devLink}>
+            Try Now
+            <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+          </Button>
+        </div>
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src={img3}
+          alt="img1"
+          width={300}
+          height={300}
+          className="w-full row-span-2"
         />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+      </section>
+      <section className="flex items-center justify-center flex-col mt-4 text-center space-y-3">
+        <span>
+          <h1 className="text-4xl font-normal">Supercharge Your Web Dev</h1>
+          <p className="font-light text-primary text-xl">
+            with Essential CSS Tools
           </p>
-        </a>
+        </span>
+        <div className="grid grid-cols-1 md:flex flex-wrap items-center justify-center gap-2 p-9 w-full text-white">
+         {
+          cssTools.map((elem, i)=>(
+            <div class="p-6 bg-tertiary border border-gray-600 rounded-lg shadow hover:border-primary " key={i}>
+            <a href="#">
+              <h5 class="mb-2 text-lg md:text-2xl font-bold ">
+                {elem.name}
+              </h5>
+            </a>
+            <Button
+      href="https://github.com/nextui-org/nextui"
+      as={Link}
+      color="primary"
+      showAnchorIcon
+      variant="flat"
+      className="border border-primary"
+    >
+      View Now
+       <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+    </Button>
+          </div>
+          ))
+         }
+        </div>
+      </section>
+      <footer className="heroSecImg w-full h-24 opacity-75 rounded-2xl flex items-center justify-around text-sm md:flex-row flex-col-reverse">
+      <p>&copy; 2023 Devvarena. All rights reserved.</p>
+        <span>Developed by Devyansh Developer</span>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      </footer>
+    </>
+  );
+};
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
-}
+export default page;
