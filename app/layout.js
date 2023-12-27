@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className='w-screen h-screen overflow-y-scroll bg-secondary max-w-6xl'>
+        <main className='w-screen h-screen overflow-y-scroll bg-secondary max-w-6xl md:px-3'>
         {children}
         </main>
       </body>
