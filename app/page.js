@@ -69,7 +69,7 @@ const devLink=`https://editor.devvarena.com/`
         </span>
         </header>
         <div className=" animate__animated animate__fadeIn md:w-5/6 flex items-center flex-col justify-center h-full space-y-2  transform translate-y-8 text-center">
-          <h1 className="text-4xl font-normal">
+          <h1 className="text-3xl md:text-4xl font-normal">
             The Perfect Editor for Beginners
           </h1>
           <p className="font-light">Simple, Powerful, and Feature-Packed</p>
