@@ -150,7 +150,7 @@ const devLink=`https://editor.devvarena.com/`
           className="w-full row-span-2"
         />
       </section>
-      <section id="cssToolsDiv" className="flex items-center justify-center flex-col mt-4 text-center space-y-3">
+      <section id="cssToolsDiv" className="flex items-center justify-center flex-col mt-10 text-center space-y-3">
         <span>
           <h1 className="text-3xl font-normal">Supercharge Your Web Dev</h1>
           <p className="font-light text-primary text-xl">
