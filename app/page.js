@@ -55,10 +55,10 @@ const devLink=`https://editor.devvarena.com/`
   return (
     <>
       <section className="heroSection w-full h-[400px]  md:h-[550px] rounded-lg  md:rounded-3xl px-2 relative flex items-center  flex-col">
-        <header className="flex w-full items-center justify-between p-4">
+        <header className="flex w-full items-center justify-between md:p-4 p-3">
           <Link
             href={devLink}
-            className="LOGO select-none text-3xl  font-semibold"
+            className="LOGO select-none text-2xl md:text-3xl  font-semibold"
           >
             Devvarena{" "}
           </Link>
@@ -100,7 +100,7 @@ const devLink=`https://editor.devvarena.com/`
           />
         </div>
       </section>
-      <div className="w-full h-[100px] md:h-[250px] flex items-end justify-center">
+      <div className="w-full h-[150px] md:h-[250px] flex items-end justify-center">
         <Link  href={devLink} className="border rounded-3xl px-5 text-sm border-primary flex items-center justify-center p-1">Kickstart your first project now<svg
                 class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
                 aria-hidden="true"
