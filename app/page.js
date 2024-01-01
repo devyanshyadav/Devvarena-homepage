@@ -197,7 +197,7 @@ const devLink=`https://editor.devvarena.com/`
         </div>
       </section>
       <footer className="heroSecImg w-full h-24 opacity-75 rounded-2xl flex items-center justify-around text-sm md:flex-row flex-col-reverse">
-      <p>&copy; 2023 Devvarena. All rights reserved.</p>
+      <p>&copy; 2024 Devvarena. All rights reserved.</p>
         <span>Made with <span className="text-primary">❤</span> by Dev Developer</span>
 
       </footer>
