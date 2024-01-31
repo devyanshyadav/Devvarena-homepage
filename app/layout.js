@@ -4,10 +4,11 @@ import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ["latin"] });
 
+
 export const metadata = {
   title: "Devvarena - The Perfect Frontend Editor for Beginners",
-  description:
-    "Devvarena is a simple, powerful, and feature-packed frontend editor designed specifically for beginners. It includes CSS tools, a JavaScript editor, an HTML editor, and a CSS editor. It also provides a JavaScript console for debugging and testing your code. Start coding and exploring the world of frontend development with Devvarena",
+  siteName: "Devvarena",
+  description: "Devvarena is a simple, powerful, and feature-packed frontend editor designed specifically for beginners. It includes CSS tools, a JavaScript editor, an HTML editor, and a CSS editor. It also provides a JavaScript console for debugging and testing your code. Start coding and exploring the world of frontend development with Devvarena.",
   keywords: [
     "codepen",
     "sandbox",
@@ -20,7 +21,7 @@ export const metadata = {
     "CSS editor",
     "JS console",
     "online editor",
-    " beginner-friendly editor",
+    "beginner-friendly editor",
     "frontend editor for beginners",
     "best frontend editor for learning",
     "easy-to-use frontend editor",
@@ -34,6 +35,27 @@ export const metadata = {
     "interactive frontend coding",
     "web development for beginners",
   ],
+  type: "product",
+  openGraph: {
+    title: 'Devvarena - The Perfect Frontend Editor for Beginners',
+    description: "Devvarena is a simple, powerful, and feature-packed frontend editor designed specifically for beginners. It includes CSS tools, a JavaScript editor, an HTML editor, and a CSS editor. It also provides a JavaScript console for debugging and testing your code. Start coding and exploring the world of frontend development with Devvarena.",
+    url: 'https://www.devvarena.com/',
+    siteName: 'Devvarena',
+    images: [
+      {
+        url: 'https://img.icons8.com/ios/50/4433FF/d-key.png',
+        width: 800,
+        height: 600,
+        alt: 'Devvarena Logo',
+      },
+      {
+        url: 'https://img.icons8.com/ios/50/4433FF/d-key.png',
+        width: 1800,
+        height: 1600,
+        alt: 'Devvarena Logo',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
