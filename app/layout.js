@@ -1,8 +1,9 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Analytics } from '@vercel/analytics/react';
+// import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ["latin"] });
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 
 export const metadata = {
@@ -64,7 +65,8 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <main className="w-screen h-screen overflow-y-scroll bg-secondary max-w-6xl md:px-3">
           {children}
-          <Analytics />
+        {/* <Analytics />*/}
+        <GoogleAnalytics gaId="G-PE4R8VNBDT" />
         </main>
       </body>
     </html>

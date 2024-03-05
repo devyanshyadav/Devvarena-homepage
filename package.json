@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^14.1.2",
     "@nextui-org/react": "^2.2.9",
     "@vercel/analytics": "^1.1.1",
     "animate.css": "^4.1.1",
