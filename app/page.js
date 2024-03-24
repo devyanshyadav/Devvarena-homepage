@@ -43,9 +43,9 @@ const page = () => {
 
   },
   {
-    name:'GDrive to Img Converter',
-    desr:'Convert images from Google Drive to various formats for web integration.',
-    link:'https://gdrive-img.devvarena.com/',
+    name:'FavTab A Bookmark Manager',
+    desr:'This is a Bookmark app which stores the favorite bookmarks in a more simplified way.',
+    link:'https://favtab.devvarena.com/',
 
   },
 
@@ -101,7 +101,7 @@ const devLink=`https://editor.devvarena.com/`
         </div>
       </section>
       <div className="w-full h-[150px] md:h-[250px] flex items-end justify-center">
-        <Link  href={devLink} className="border rounded-3xl px-5 text-sm border-primary flex items-center justify-center p-1">Kickstart your first project now<svg
+        <Link target="_blank"  href={devLink} className="border rounded-3xl px-5 text-sm border-primary flex items-center justify-center p-1">Kickstart your first project now<svg
                 class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
@@ -154,7 +154,7 @@ const devLink=`https://editor.devvarena.com/`
         <span>
           <h1 className="text-3xl font-normal">Supercharge Your Web Dev</h1>
           <p className="font-light text-primary text-xl">
-            with Essential CSS Tools
+            with Essential Web Dev Tools
           </p>
         </span>
         <div  className="grid grid-cols-1 md:flex flex-wrap items-center justify-center gap-2 p-5 md:p-9 w-full text-white">
@@ -168,6 +168,7 @@ const devLink=`https://editor.devvarena.com/`
             </Link>
             <Button
       href={elem.link}
+      target="_blank"
       size="sm"
       as={Link}
       color="primary"
