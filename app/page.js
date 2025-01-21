@@ -51,7 +51,7 @@ const page = () => {
 
 ]
 
-const devLink=`https://editor.devvarena.com/`
+const devLink=`https://editor.devvarena.com/playground/new`
   return (
     <>
       <section className="heroSection w-full h-[400px]  md:h-[550px] rounded-lg  md:rounded-3xl px-2 relative flex items-center  flex-col">
@@ -198,7 +198,7 @@ const devLink=`https://editor.devvarena.com/`
         </div>
       </section>
       <footer className="heroSecImg w-full h-24 opacity-75 rounded-2xl flex items-center justify-around text-sm md:flex-row flex-col-reverse">
-      <p>&copy; 2024 Devvarena. All rights reserved.</p>
+      <p>&copy; 2025 Devvarena. All rights reserved.</p>
         <span>Made with <span className="text-primary">❤</span> by Dev Developer</span>
 
       </footer>
