@@ -42,12 +42,6 @@ const page = () => {
     link:'https://glassmorphism.devvarena.com/',
 
   },
-  {
-    name:'FavTab A Bookmark Manager',
-    desr:'This is a Bookmark app which stores the favorite bookmarks in a more simplified way.',
-    link:'https://favtab.devvarena.com/',
-
-  },
 
 ]
 
